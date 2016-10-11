@@ -1,0 +1,9 @@
+<ion-view view-title="{{playlist.title}}">
+  <ion-content>
+	  <ion-list>
+			<ion-item ng-repeat="single in playlist.singleCategory" ui-sref="app.single({playlistId: playlist.id, singleId: single.id})">
+				<span ng-bind="single.title"></span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

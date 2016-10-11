@@ -1,0 +1,17 @@
+<ion-view title="Search">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1>Search</h1>
+    <label>Search: <input ng-model="searchText"></label>
+    
+    <ion-list>
+      <div ng-repeat="playlist in playlists">
+				<ion-item ng-repeat="single in playlist.singleCategory | filter:searchText | orderBy:'-title'" ui-sref="app.single({playlistId: playlist.id, singleId: single.id})">
+  				<span ng-bind="single.title"></span>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
