@@ -4,6 +4,6 @@ https://github.com/driftyco/ionic-starter-sidemenu
 
 ---
 
-Demo Ui-router sharing data between views nested views
+[Demo](https://embed.plnkr.co/6pqT0F/) Ui-router sharing data between views
 
-(outdated).
+ionic@1 (outdated).
